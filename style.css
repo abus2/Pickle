@@ -1,0 +1,557 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000000;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0d0d0d, #333);
+    height: 100vh;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.cta-primary {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+}
+
+.cta-primary:hover {
+    background-color: #e6b800;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    border: 2px solid #ffcc00;
+}
+
+.cta-secondary:hover {
+    background-color: #333;
+}
+
+
+
+
+nav {
+    position: absolute;
+    top: 10px;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+   
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.about-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #dcdcdc;
+}
+
+.about-section .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #333;
+    border-left: 5px solid #ffcc00;
+    width: 80%;
+    text-align: left;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #bfbfbf;
+}
+
+@media (min-width: 768px) {
+    .timeline {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .timeline-item {
+        width: 40%;
+        margin: 10px;
+    }
+}
+
+
+.products-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #76c7c0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #76c7c0;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #76c7c0;
+    color: #121212;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #5aa9a3;
+}
+
+.testimonials-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 1rem;
+}
+
+.testimonial .rating {
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+.testimonial .rating i {
+    margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+    .testimonials {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial {
+        width: calc(33% - 20px);
+        margin: 10px;
+    }
+}
+
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.quiz-container {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.quiz-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.quiz-options button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-options button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    display: none;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.result.active {
+    display: block;
+}
+
+.recipes-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.recipes-section h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.recipes-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #b3b3b3;
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card .content {
+    padding: 20px;
+}
+
+.recipe-card h3 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffcc00;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card a:hover {
+    background-color: #e6b800;
+}
+
+.cta-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1f1f1f;
+    border-top: 4px solid #4caf50;
+}
+
+.cta-banner h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    color: #4caf50;
+}
+
+.cta-banner p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+    color: #cccccc;
+}
+
+.cta-banner .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-banner .cta-button:hover {
+    background-color: #3e8e41;
+}
+
+
+/* CSS for Dark Theme Footer */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    margin: 15px;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p, .footer-section ul, .footer-section form {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #4caf50;
+  }
+  
+  .footer-section form input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .footer-section form button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-section form button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  
+  .social-icons a {
+    color: #f1f1f1;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #4caf50;
+  }
+  
